@@ -1,0 +1,26 @@
+.dark {
+    color: #fff;
+    background-color: #555;
+}
+
+.dark header {
+    border: 1px solid #ccc;
+}
+
+.info_dark {
+    color: #ccc;
+    border-top: 1px solid #ccc;
+    margin:0px 0px 10px 0px;
+    padding-top:10px ;
+    text-decoration : none !important;
+}
+
+
+.contact_dark {
+    color: #ccc;
+}
+
+.education_dark, .experience_dark {
+    color: black;   
+    background-color:  #555 !important;
+}
