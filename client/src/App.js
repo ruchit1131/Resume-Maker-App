@@ -15,8 +15,12 @@ class App extends Component {
     pnumber: '',
     prefix: '',
 	style: 'formal',
+	color: 'peach',
 	linkedin: '',
 	github: '',
+	kaggle: '',
+	twitter: '',
+	website: '',
 	skills: '',
 	achievements: '',
 	degree1:'',
@@ -59,6 +63,7 @@ class App extends Component {
 	tech4:'',
 	link4:'',
 	project4:'',
+	watermark: 'no'
   }
 
 
@@ -70,6 +75,7 @@ class App extends Component {
 // 		"pnumber": "9812113911",
 // 		"prefix": "",
 // 		"style": "light",
+// 		"color": "peach",
 // 		"linkedin": "https://www.linkedin.com/in/ruchit-karnawat-509a0b139/",
 // 		"github": "https://github.com/ruchit1131",
 // 		"twitter": "https://twitter.com/karnawat_ruchit",
@@ -116,10 +122,18 @@ class App extends Component {
 // 		"title4": "Fastag Extention",
 // 		"tech4": "Python",
 // 		"link4": "https://github.com/ruchit1131/FASTAG_EXTENTION",
-// 		"project4": "Developed an application using Python which extends the concept of the current system of FasTag used for automated toll collection to include 2 new features: Police Challan collection and Petrol Pump Payments using ‘requests‘ package to connect to fast2sms’ API for sending OTP and Update information through SMS."
+// 		"project4": "Developed an application using Python which extends the concept of the current system of FasTag used for automated toll collection to include 2 new features: Police Challan collection and Petrol Pump Payments using ‘requests‘ package to connect to fast2sms’ API for sending OTP and Update information through SMS.",
+// 		"watermark": 'no'
 // }
 
   handleChange = ({ target: { value, name }}) => this.setState({ [name]: value })
+
+  wChange = ({ target: { value, name }}) => {
+	  if(value === "yes")
+		  this.setState({ [name]: "no" });
+	  else
+	  this.setState({ [name]: "yes" });
+  }
 
   createAndDownloadPdf = () => {
     axios.post('/create-pdf', this.state)
@@ -146,25 +160,25 @@ class App extends Component {
 		<option value="Ms.">Ms.</option>		
 	</select>
 
-	<input type="text" id="firstName" placeholder="First Name" name="fname" onChange={this.handleChange}/>
+	<input type="text" id="firstName" placeholder="First Name" value={this.state.fname} name="fname" onChange={this.handleChange}/>
 
-	<input type="text" id="lastName" placeholder="Last Name" name="lname" onChange={this.handleChange}/>
+	<input type="text" id="lastName" placeholder="Last Name" value={this.state.lname} name="lname" onChange={this.handleChange}/>
 </section>
 
 <section >
 	<h2>Info:</h2>
-	<input type="text" name="email" placeholder="Email" onChange={this.handleChange}/><br />
-	<input type="text" name="pnumber" placeholder="Phone Number" onChange={this.handleChange}/>
-	<input type="text" name="linkedin" placeholder="Linkedin link" onChange={this.handleChange}/>
-	<input type="text" name="github" placeholder="Github link" onChange={this.handleChange}/>
-	<input type="text" name="kaggle" placeholder="Kaggle link" onChange={this.handleChange}/>
-	<input type="text" name="twitter" placeholder="Twitter link" onChange={this.handleChange}/>
-	<input type="text" name="website" placeholder="Website link" onChange={this.handleChange}/>
+	<input type="text" value={this.state.email} name="email" placeholder="Email" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.pnumber} name="pnumber" placeholder="Phone Number" onChange={this.handleChange}/>
+	<input type="text" value={this.state.linkedin} name="linkedin" placeholder="Linkedin link" onChange={this.handleChange}/>
+	<input type="text" value={this.state.github} name="github" placeholder="Github link" onChange={this.handleChange}/>
+	<input type="text" value={this.state.kaggle} name="kaggle" placeholder="Kaggle link" onChange={this.handleChange}/>
+	<input type="text" value={this.state.twitter} name="twitter" placeholder="Twitter link" onChange={this.handleChange}/>
+	<input type="text" value={this.state.website} name="website" placeholder="Website link" onChange={this.handleChange}/>
 </section>
 
 <section >
 	<h2>SKILLS:</h2>
-	<textarea name="skills" rows="6" cols="80" onChange={this.handleChange}></textarea>
+	<textarea value={this.state.skills} name="skills" rows="6" cols="80" onChange={this.handleChange}></textarea>
 </section>
 
 <section >
@@ -174,28 +188,28 @@ class App extends Component {
 	<br></br>
 	<br></br>
 	<h2>EDUCATION 1 :</h2>
-	<input type="text" name="degree1" placeholder="Degree" onChange={this.handleChange}/><br />
-	<input type="text" name="institute1" placeholder="Institute Name" onChange={this.handleChange}/>
-	<input type="text" name="grade1" placeholder="Grade" onChange={this.handleChange}/>
-	<input type="text" name="year1" placeholder="Duration" onChange={this.handleChange}/>
+	<input type="text" value={this.state.degree1} name="degree1" placeholder="Degree" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.institute1} name="institute1" placeholder="Institute Name" onChange={this.handleChange}/>
+	<input type="text" value={this.state.grade1} name="grade1" placeholder="Grade" onChange={this.handleChange}/>
+	<input type="text" value={this.state.year1} name="year1" placeholder="Duration" onChange={this.handleChange}/>
 
 	<br></br>
 	<br></br>
 
 	<h2>EDUCATION 2 :</h2>
-	<input type="text" name="degree2" placeholder="Degree" onChange={this.handleChange}/><br />
-	<input type="text" name="institute2" placeholder="Institute Name" onChange={this.handleChange}/>
-	<input type="text" name="grade2" placeholder="Grade" onChange={this.handleChange}/>
-	<input type="text" name="year2" placeholder="Duration" onChange={this.handleChange}/>
+	<input type="text" value={this.state.degree2} name="degree2" placeholder="Degree" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.institute2} name="institute2" placeholder="Institute Name" onChange={this.handleChange}/>
+	<input type="text" value={this.state.grade2} name="grade2" placeholder="Grade" onChange={this.handleChange}/>
+	<input type="text" value={this.state.year2} name="year2" placeholder="Duration" onChange={this.handleChange}/>
 
 		<br></br>
 		<br></br>
 
 	<h2>EDUCATION 3 :</h2>
-	<input type="text" name="degree3" placeholder="Degree" onChange={this.handleChange}/><br />
-	<input type="text" name="institute3" placeholder="Institute Name" onChange={this.handleChange}/>
-	<input type="text" name="grade3" placeholder="Grade" onChange={this.handleChange}/>
-	<input type="text" name="year3" placeholder="Duration" onChange={this.handleChange}/>
+	<input type="text" value={this.state.degree3} name="degree3" placeholder="Degree" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.institute3} name="institute3" placeholder="Institute Name" onChange={this.handleChange}/>
+	<input type="text" value={this.state.grade3} name="grade3" placeholder="Grade" onChange={this.handleChange}/>
+	<input type="text" value={this.state.year3} name="year3" placeholder="Duration" onChange={this.handleChange}/>
 </section>
 
 
@@ -206,28 +220,28 @@ class App extends Component {
 	<br></br>
 	<br></br>
 <h2>EXPERIENCE 1 :</h2>
-	<input type="text" name="company1" placeholder="Company Name" onChange={this.handleChange}/>
-	<input type="text" name="role1" placeholder="Role/Position" onChange={this.handleChange}/><br />
-	<input type="text" name="org_year1" placeholder="Duration" onChange={this.handleChange}/>
-	<textarea type="text" rows="6" cols="80" name="experience1" placeholder="What you did" onChange={this.handleChange}/>
+	<input type="text" value={this.state.company1} name="company1" placeholder="Company Name" onChange={this.handleChange}/>
+	<input type="text" value={this.state.role1} name="role1" placeholder="Role/Position" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.org_year1} name="org_year1" placeholder="Duration" onChange={this.handleChange}/>
+	<textarea type="text" rows="6" cols="80" value={this.state.experience1} name="experience1" placeholder="What you did" onChange={this.handleChange}/>
 
 	<br></br>
 	<br></br>
 
 	<h2>EXPERIENCE 2 :</h2>
-	<input type="text" name="company2" placeholder="Company Name" onChange={this.handleChange}/>
-	<input type="text" name="role2" placeholder="Role/Position" onChange={this.handleChange}/><br />
-	<input type="text" name="org_year2" placeholder="Duration" onChange={this.handleChange}/>
-	<textarea type="text" rows="6" cols="80" name="experience2" placeholder="What you did" onChange={this.handleChange}/>
+	<input type="text" value={this.state.company2} name="company2" placeholder="Company Name" onChange={this.handleChange}/>
+	<input type="text" value={this.state.role2} ame="role2" placeholder="Role/Position" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.org_year2} name="org_year2" placeholder="Duration" onChange={this.handleChange}/>
+	<textarea type="text" rows="6" cols="80" value={this.state.experience2} name="experience2" placeholder="What you did" onChange={this.handleChange}/>
 
 		<br></br>
 		<br></br>
 
 	<h2>EXPERIENCE 3 :</h2>
-	<input type="text" name="company3" placeholder="Company Name" onChange={this.handleChange}/>
-	<input type="text" name="role3" placeholder="Role/Position" onChange={this.handleChange}/><br />
-	<input type="text" name="org_year3" placeholder="Duration" onChange={this.handleChange}/>
-	<textarea  rows="6" cols="80" name="experience3" placeholder="What you did" onChange={this.handleChange}/>
+	<input type="text" value={this.state.company3} name="company3" placeholder="Company Name" onChange={this.handleChange}/>
+	<input type="text" value={this.state.role3} name="role3" placeholder="Role/Position" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.org_year3} name="org_year3" placeholder="Duration" onChange={this.handleChange}/>
+	<textarea  rows="6" cols="80" value={this.state.experience3} name="experience3" placeholder="What you did" onChange={this.handleChange}/>
 </section>
 
 <section >
@@ -238,44 +252,44 @@ class App extends Component {
 	<br></br>
 
 	<h2>PROJECT 1 :</h2>
-	<input type="text" name="title1" placeholder="Title" onChange={this.handleChange}/>
-	<input type="text" name="tech1" placeholder="Technologies used" onChange={this.handleChange}/>
-	<input type="text" name="link1" placeholder="Link to Project" onChange={this.handleChange}/><br />
-	<textarea rows="6" cols="80" type="text" name="project1" placeholder="Something about the project.." onChange={this.handleChange}/>
+	<input type="text" value={this.state.title1} name="title1" placeholder="Title" onChange={this.handleChange}/>
+	<input type="text" value={this.state.tech1} name="tech1" placeholder="Technologies used" onChange={this.handleChange}/>
+	<input type="text" value={this.state.link1} name="link1" placeholder="Link to Project" onChange={this.handleChange}/><br />
+	<textarea rows="6" cols="80" type="text" value={this.state.project1} name="project1" placeholder="Something about the project.." onChange={this.handleChange}/>
 
 	<br></br>
 	<br></br>
 
 	<h2>PROJECT 2 :</h2>
-	<input type="text" name="title2" placeholder="Title" onChange={this.handleChange}/>
-	<input type="text" name="tech2" placeholder="Technologies used" onChange={this.handleChange}/>
-	<input type="text" name="link2" placeholder="Link to Project" onChange={this.handleChange}/><br />
-	<textarea rows="6" cols="80" type="text" name="project2" placeholder="Something about the project.." onChange={this.handleChange}/>
+	<input type="text" value={this.state.title2} name="title2" placeholder="Title" onChange={this.handleChange}/>
+	<input type="text" value={this.state.tech2} name="tech2" placeholder="Technologies used" onChange={this.handleChange}/>
+	<input type="text" value={this.state.link2} name="link2" placeholder="Link to Project" onChange={this.handleChange}/><br />
+	<textarea rows="6" cols="80" type="text" value={this.state.project2} name="project2" placeholder="Something about the project.." onChange={this.handleChange}/>
 
 	<br></br>
 	<br></br>
 
 	<h2>PROJECT 3 :</h2>
-	<input type="text" name="title3" placeholder="Title" onChange={this.handleChange}/>
-	<input type="text" name="tech3" placeholder="Technologies used" onChange={this.handleChange}/>
-	<input type="text" name="link1" placeholder="Link to Project" onChange={this.handleChange}/><br />
-	<textarea rows="6" cols="80" type="text" name="project3" placeholder="Something about the project.." onChange={this.handleChange}/>
+	<input type="text" value={this.state.title3} name="title3" placeholder="Title" onChange={this.handleChange}/>
+	<input type="text" value={this.state.tech3} name="tech3" placeholder="Technologies used" onChange={this.handleChange}/>
+	<input type="text" value={this.state.link3} name="link3" placeholder="Link to Project" onChange={this.handleChange}/><br />
+	<textarea rows="6" cols="80" type="text" value={this.state.project3} name="project3" placeholder="Something about the project.." onChange={this.handleChange}/>
 
 	<br></br>
 	<br></br>
 
 	<h2>PROJECT 4 :</h2>
-	<input type="text" name="title4" placeholder="Title" onChange={this.handleChange}/>
-	<input type="text" name="tech4" placeholder="Technologies used" onChange={this.handleChange}/>
-	<input type="text" name="link4" placeholder="Link to Project" onChange={this.handleChange}/><br />
-	<textarea rows="6" cols="80" type="text" name="project4" placeholder="Something about the project.." onChange={this.handleChange}/>
+	<input type="text" value={this.state.title4} name="title4" placeholder="Title" onChange={this.handleChange}/>
+	<input type="text" value={this.state.tech4} name="tech4" placeholder="Technologies used" onChange={this.handleChange}/>
+	<input type="text" value={this.state.link4} name="link4" placeholder="Link to Project" onChange={this.handleChange}/><br />
+	<textarea rows="6" cols="80" type="text" value={this.state.project4} name="project4" placeholder="Something about the project.." onChange={this.handleChange}/>
 
 
 </section>
 
 <section >
 	<h2>ACHIEVEMENTS:</h2>
-	<textarea name="achievements" placeholder="For new line use: <br> You can write content using html tags and css" rows="6" cols="80" onChange={this.handleChange}></textarea>
+	<textarea value={this.state.achievements} name="achievements" placeholder="For new line use: <br> You can write content using html tags and css" rows="6" cols="80" onChange={this.handleChange}></textarea>
 </section>
 
 <section >
@@ -286,6 +300,26 @@ class App extends Component {
 		<option value="dark">Shady</option>
 		<option value="colorful">Colorful</option>		
 	</select>
+</section>
+
+<section >
+	<h2>Color (for 'Colorful' style)</h2>
+	<select  style = {{textAlignLast: 'center'}} name="color" value={this.state.color} onChange={this.handleChange}>
+		<option value="peach">Peach</option>
+		<option value="red">Red</option>
+		<option value="green">Green</option>
+		<option value="violet">Violet</option>		
+		<option value="blue">Blue</option>	
+		<option value="orange">Orange</option>	
+		<option value="yellow">Yellow</option>	
+		<option value="brown">Brown</option>	
+	</select>
+</section>
+
+<section >
+	<input style={{display : 'inline', margin : '0px', width: '20px'}} type="checkbox" name="watermark" onChange={this.wChange} value={this.state.watermark}/>
+	<p style={{display : 'inline', padding : '10px'}}>Remove watermark</p>
+	
 </section>
 
 <section >
@@ -324,7 +358,7 @@ class Show extends Component{
 		<Router>
 		  <Header/>
 		  <Route exact path = "/" component={App}/>
-		  <Route path="/about" component={About} />
+		  <Route exact path="/about" component={About} />
 		</Router>
 	  )
 	}

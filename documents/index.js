@@ -51,7 +51,9 @@ module.exports = ({
 	title4,
 	tech4,
 	link4,
-	project4, 
+    project4,
+    color,
+    watermark 
             }) => {
     
     
@@ -198,14 +200,22 @@ module.exports = ({
                     
                     /* colorful */
                     
-                    
+                    /* ${color === 'peach' ? 'rgb(244, 238, 237)' : ''}${color === 'red' ? 'rgb(54, 29, 48)' : ''}${color === 'green' ? 'rgb(54, 29, 48)' : ''}${color === 'violet' ? 'rgb(54, 29, 48)' : ''}${color === 'blue' ? 'rgb(54, 29, 48)' : ''}${color === 'orange' ? 'rgb(54, 29, 48)' : ''}${color === 'yellow' ? 'rgb(54, 29, 48)' : ''}${color === 'brown' ? 'rgb(54, 29, 48)' : ''}*/
+
+
+
+
+
+
+
+
 
                     .colorful #subhead{
-                        color: rgb(54, 29, 48);
+                        color: #111;
                     }
 
                     .colorful header {
-                        background: rgb(222, 184, 171);
+                        background: ${color === 'peach' ? 'rgb(222, 184, 171)' : ''}${color === 'red' ? 'rgb(255, 175, 166)' : ''}${color === 'green' ? 'rgb(172, 222, 146)' : ''}${color === 'violet' ? 'rgb(209, 169, 217)' : ''}${color === 'blue' ? 'rgb(178, 218, 237)' : ''}${color === 'orange' ? 'rgb(227, 193, 138)' : ''}${color === 'yellow' ? 'rgb(240, 240, 168)' : ''}${color === 'brown' ? 'rgb(199, 169, 131)' : ''};
                     }
                     
                     .colorful h1 {
@@ -214,8 +224,8 @@ module.exports = ({
                     
                     
                     .info_colorful {
-                        color: rgb(54, 29, 48);
-                        background:  rgb(244, 238, 237);
+                        color: #111;
+                        background:  ${color === 'peach' ? 'rgb(244, 238, 237)' : ''}${color === 'red' ? 'rgb(255, 211, 207)' : ''}${color === 'green' ? 'rgb(208, 240, 192)' : ''}${color === 'violet' ? 'rgb(214, 202, 217)' : ''}${color === 'blue' ? 'rgb(209, 230, 240)' : ''}${color === 'orange' ? 'rgb(237, 221, 194)' : ''}${color === 'yellow' ? 'rgb(245, 245, 203)' : ''}${color === 'brown' ? 'rgb(219, 199, 173)' : ''};
                         border-top: 1px solid black;
                         margin:0px 0px 10px 0px;
                         padding-top:10px ;
@@ -223,31 +233,19 @@ module.exports = ({
                     
                     .contact_colorful {
                         color: rgb(20,20,20);
-                        background:  rgb(244, 238, 237);
+                        background:  ${color === 'peach' ? 'rgb(244, 238, 237)' : ''}${color === 'red' ? 'rgb(255, 211, 207)' : ''}${color === 'green' ? 'rgb(208, 240, 192)' : ''}${color === 'violet' ? 'rgb(214, 202, 217)' : ''}${color === 'blue' ? 'rgb(209, 230, 240)' : ''}${color === 'orange' ? 'rgb(237, 221, 194)' : ''}${color === 'yellow' ? 'rgb(245, 245, 203)' : ''}${color === 'brown' ? 'rgb(219, 199, 173)' : ''};
                     }
 
                     .colorful h2{
                         
                         color: #111;
-                        background:  rgb(222, 184, 171);
+                        background:  ${color === 'peach' ? 'rgb(222, 184, 171)' : ''}${color === 'red' ? 'rgb(255, 175, 166)' : ''}${color === 'green' ? 'rgb(172, 222, 146)' : ''}${color === 'violet' ? 'rgb(209, 169, 217)' : ''}${color === 'blue' ? 'rgb(178, 218, 237)' : ''}${color === 'orange' ? 'rgb(227, 193, 138)' : ''}${color === 'yellow' ? 'rgb(240, 240, 168)' : ''}${color === 'brown' ? 'rgb(199, 169, 131)' : ''};
                     }
                     .colorful h3{
                         
                         color: #111;
                     }
                         
-                    .education_colorful{
-                        color:rgb(74, 63, 59);
-                    }
-                    .education_colorful th{
-                        color:rgb(74, 0, 38);
-                    }
-                    .experience_colorful{
-                        color:rgb(74, 63, 59) !important;
-                    }
-                    .project_colorful{
-                        color:rgb(74, 63, 59) !important;
-                    }
 
 
                     .no-break {
@@ -308,7 +306,7 @@ module.exports = ({
        </head>
     
        <body>
-            <p style="width: 946px; color: #222;text-decoration: none;border-radius: 20px; background: rgb(232,232,232);font-family: 'Lato'; border: 1px solid #eee; padding: 2px;display:block;
+            <p style="${watermark === "yes" ? 'visibility: hidden;': ''}width: 946px; color: #222;text-decoration: none;border-radius: 20px; background: rgb(232,232,232);font-family: 'Lato'; border: 1px solid #eee; padding: 2px;display:block;
             margin: 2px 0px 0px 22px;">
             Made  using  Five  Minute  Resume  App&nbsp&nbsp<a style =" float: right; padding-right: 10px; text-decoration: none; color: rgb(0, 0, 135); "href="https://github.com/ruchit1131/Resume-Maker-App">Source Code</a>
             &nbsp&nbsp<a style ="float: right;padding-right: 10px; text-decoration: none; color: rgb(0, 0, 135); "href="https://five-minute-resume.herokuapp.com/">Link to app</a>
