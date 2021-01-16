@@ -167,7 +167,7 @@ class App extends Component {
 
 <section >
 	<h2>Info:</h2>
-	<input type="text" value={this.state.email} name="email" placeholder="Email" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.email} name="email" placeholder="Email" onChange={this.handleChange}/>
 	<input type="text" value={this.state.pnumber} name="pnumber" placeholder="Phone Number" onChange={this.handleChange}/>
 	<input type="text" value={this.state.linkedin} name="linkedin" placeholder="Linkedin link" onChange={this.handleChange}/>
 	<input type="text" value={this.state.github} name="github" placeholder="Github link" onChange={this.handleChange}/>
@@ -188,7 +188,7 @@ class App extends Component {
 	<br></br>
 	<br></br>
 	<h2>EDUCATION 1 :</h2>
-	<input type="text" value={this.state.degree1} name="degree1" placeholder="Degree" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.degree1} name="degree1" placeholder="Degree" onChange={this.handleChange}/>
 	<input type="text" value={this.state.institute1} name="institute1" placeholder="Institute Name" onChange={this.handleChange}/>
 	<input type="text" value={this.state.grade1} name="grade1" placeholder="Grade" onChange={this.handleChange}/>
 	<input type="text" value={this.state.year1} name="year1" placeholder="Duration" onChange={this.handleChange}/>
@@ -197,7 +197,7 @@ class App extends Component {
 	<br></br>
 
 	<h2>EDUCATION 2 :</h2>
-	<input type="text" value={this.state.degree2} name="degree2" placeholder="Degree" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.degree2} name="degree2" placeholder="Degree" onChange={this.handleChange}/>
 	<input type="text" value={this.state.institute2} name="institute2" placeholder="Institute Name" onChange={this.handleChange}/>
 	<input type="text" value={this.state.grade2} name="grade2" placeholder="Grade" onChange={this.handleChange}/>
 	<input type="text" value={this.state.year2} name="year2" placeholder="Duration" onChange={this.handleChange}/>
@@ -206,7 +206,7 @@ class App extends Component {
 		<br></br>
 
 	<h2>EDUCATION 3 :</h2>
-	<input type="text" value={this.state.degree3} name="degree3" placeholder="Degree" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.degree3} name="degree3" placeholder="Degree" onChange={this.handleChange}/>
 	<input type="text" value={this.state.institute3} name="institute3" placeholder="Institute Name" onChange={this.handleChange}/>
 	<input type="text" value={this.state.grade3} name="grade3" placeholder="Grade" onChange={this.handleChange}/>
 	<input type="text" value={this.state.year3} name="year3" placeholder="Duration" onChange={this.handleChange}/>
@@ -221,7 +221,7 @@ class App extends Component {
 	<br></br>
 <h2>EXPERIENCE 1 :</h2>
 	<input type="text" value={this.state.company1} name="company1" placeholder="Company Name" onChange={this.handleChange}/>
-	<input type="text" value={this.state.role1} name="role1" placeholder="Role/Position" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.role1} name="role1" placeholder="Role/Position" onChange={this.handleChange}/>
 	<input type="text" value={this.state.org_year1} name="org_year1" placeholder="Duration" onChange={this.handleChange}/>
 	<textarea type="text" rows="6" cols="80" value={this.state.experience1} name="experience1" placeholder="What you did" onChange={this.handleChange}/>
 
@@ -230,7 +230,7 @@ class App extends Component {
 
 	<h2>EXPERIENCE 2 :</h2>
 	<input type="text" value={this.state.company2} name="company2" placeholder="Company Name" onChange={this.handleChange}/>
-	<input type="text" value={this.state.role2} ame="role2" placeholder="Role/Position" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.role2} name="role2" placeholder="Role/Position" onChange={this.handleChange}/>
 	<input type="text" value={this.state.org_year2} name="org_year2" placeholder="Duration" onChange={this.handleChange}/>
 	<textarea type="text" rows="6" cols="80" value={this.state.experience2} name="experience2" placeholder="What you did" onChange={this.handleChange}/>
 
@@ -239,7 +239,7 @@ class App extends Component {
 
 	<h2>EXPERIENCE 3 :</h2>
 	<input type="text" value={this.state.company3} name="company3" placeholder="Company Name" onChange={this.handleChange}/>
-	<input type="text" value={this.state.role3} name="role3" placeholder="Role/Position" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.role3} name="role3" placeholder="Role/Position" onChange={this.handleChange}/>
 	<input type="text" value={this.state.org_year3} name="org_year3" placeholder="Duration" onChange={this.handleChange}/>
 	<textarea  rows="6" cols="80" value={this.state.experience3} name="experience3" placeholder="What you did" onChange={this.handleChange}/>
 </section>
@@ -254,7 +254,7 @@ class App extends Component {
 	<h2>PROJECT 1 :</h2>
 	<input type="text" value={this.state.title1} name="title1" placeholder="Title" onChange={this.handleChange}/>
 	<input type="text" value={this.state.tech1} name="tech1" placeholder="Technologies used" onChange={this.handleChange}/>
-	<input type="text" value={this.state.link1} name="link1" placeholder="Link to Project" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.link1} name="link1" placeholder="Link to Project" onChange={this.handleChange}/>
 	<textarea rows="6" cols="80" type="text" value={this.state.project1} name="project1" placeholder="Something about the project.." onChange={this.handleChange}/>
 
 	<br></br>
@@ -263,7 +263,7 @@ class App extends Component {
 	<h2>PROJECT 2 :</h2>
 	<input type="text" value={this.state.title2} name="title2" placeholder="Title" onChange={this.handleChange}/>
 	<input type="text" value={this.state.tech2} name="tech2" placeholder="Technologies used" onChange={this.handleChange}/>
-	<input type="text" value={this.state.link2} name="link2" placeholder="Link to Project" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.link2} name="link2" placeholder="Link to Project" onChange={this.handleChange}/>
 	<textarea rows="6" cols="80" type="text" value={this.state.project2} name="project2" placeholder="Something about the project.." onChange={this.handleChange}/>
 
 	<br></br>
@@ -272,7 +272,7 @@ class App extends Component {
 	<h2>PROJECT 3 :</h2>
 	<input type="text" value={this.state.title3} name="title3" placeholder="Title" onChange={this.handleChange}/>
 	<input type="text" value={this.state.tech3} name="tech3" placeholder="Technologies used" onChange={this.handleChange}/>
-	<input type="text" value={this.state.link3} name="link3" placeholder="Link to Project" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.link3} name="link3" placeholder="Link to Project" onChange={this.handleChange}/>
 	<textarea rows="6" cols="80" type="text" value={this.state.project3} name="project3" placeholder="Something about the project.." onChange={this.handleChange}/>
 
 	<br></br>
@@ -281,7 +281,7 @@ class App extends Component {
 	<h2>PROJECT 4 :</h2>
 	<input type="text" value={this.state.title4} name="title4" placeholder="Title" onChange={this.handleChange}/>
 	<input type="text" value={this.state.tech4} name="tech4" placeholder="Technologies used" onChange={this.handleChange}/>
-	<input type="text" value={this.state.link4} name="link4" placeholder="Link to Project" onChange={this.handleChange}/><br />
+	<input type="text" value={this.state.link4} name="link4" placeholder="Link to Project" onChange={this.handleChange}/>
 	<textarea rows="6" cols="80" type="text" value={this.state.project4} name="project4" placeholder="Something about the project.." onChange={this.handleChange}/>
 
 
