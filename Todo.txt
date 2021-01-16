@@ -1,0 +1,4 @@
+App.js value = this.state.value
+Other colorful themes
+Remove watermark
+/about page 

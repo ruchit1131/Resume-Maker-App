@@ -70,6 +70,9 @@ module.exports = ({
            <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
            <style>
+           html{
+               zoom: 0.6;
+           }
                     *{
                         margin: 0;
                         padding: 0;
