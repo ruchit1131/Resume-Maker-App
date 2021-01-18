@@ -1,7 +1,7 @@
 App.js value = this.state.value
 Other colorful themes
 Remove watermark
-/about page 
+/about page ( use /* instead of / in express i.e express.use('/*')...)
 
 Changing component changes state
 defalut resume
