@@ -7,7 +7,7 @@
 <a href="https://ibb.co/sPBjhT7"><img src="https://i.ibb.co/hMqskG0/localhost-3000-i-Phone-6-7-8-Plus-1.png" alt="localhost-3000-i-Phone-6-7-8-Plus-1" width="300" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://ibb.co/VDsCNjn"><img src="https://i.ibb.co/sQZ1Pmx/localhost-3000-i-Phone-6-7-8-Plus-2.png" alt="localhost-3000-i-Phone-6-7-8-Plus-2" width="300" border="0" /></a>
 <br/><br/>
-## Resume Exampe: Style: Fromal, Watermark: Not Present
+## Resume Exampe
 <br/><br/>
 <a href="https://ibb.co/M7P4HzR"><img src="https://i.ibb.co/89Ppwyj/new-Pdf-2.jpg" alt="new-Pdf-2" border="0" /></a>
 <br/><br/>
