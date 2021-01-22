@@ -6,7 +6,7 @@
 <a href="https://ibb.co/VDsCNjn"><img src="https://i.ibb.co/sQZ1Pmx/localhost-3000-i-Phone-6-7-8-Plus-2.png" alt="localhost-3000-i-Phone-6-7-8-Plus-2" width="300" border="0" /></a>
 
 
-## Resume Exampe<br/><br/>
+## Resume Exampe: Style: Formal, Watermark: Not present<br/><br/>
 
 
 <a href="https://ibb.co/M7P4HzR"><img src="https://i.ibb.co/89Ppwyj/new-Pdf-2.jpg" alt="new-Pdf-2" border="0" /></a>
