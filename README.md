@@ -2,7 +2,7 @@
 
 ### [Live Site](https://five-minute-resume.herokuapp.com/)<br/><br/>
 
-## Tech used: 
+## TECH
 
   ![HTML5](https://img.shields.io/badge/-HTML5-333333?style=flat&logo=HTML5)&nbsp;&nbsp;&nbsp;
   ![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;&nbsp;&nbsp;
@@ -22,6 +22,11 @@
 
 <a href="https://ibb.co/M7P4HzR"><img src="https://i.ibb.co/89Ppwyj/new-Pdf-2.jpg" alt="new-Pdf-2" width="400" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://ibb.co/g9tF9jv"><img src="https://i.ibb.co/3dSYdrf/new-Pdf-1.jpg" alt="new-Pdf-1"  width="400" border="0" /></a><br/><br/><br/><br/>
+
+## FEATURES
+
+  + 11 different styles available.
+  + Custom style your content using html and css. E.g This is &ltb&gt bold &lt/b&gt text will render like : This is <b> bold </b> text.
 
   
 
