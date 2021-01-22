@@ -25,7 +25,7 @@
 <a href="https://ibb.co/g9tF9jv"><img src="https://i.ibb.co/3dSYdrf/new-Pdf-1.jpg" alt="new-Pdf-1"  width="400" border="0" /></a><br/><br/><br/>
 
 ## ABOUT
-  This is a React, Node, Express stack app. html-pdf node module is used to convert html code to PDF file. The Frontend react app is a form in which you can enter your details. By default the watermark will appear above. To remove it just check 'Remove Watermark' box. The client(Frontend) sends the form data to the server(Backend) which uses the data to make an HTML document.The HTML document is rendered to PDF format and sotred on the server. The client requests the saved PDF and saves it in the storage of the user.
+  This is a React, Node, Express app. html-pdf node module is used to convert html code to PDF file. The Frontend react app is a form in which you can enter your details. By default the watermark will appear above. To remove it just check 'Remove Watermark' box. The client(Frontend) sends the form data to the server(Backend) which uses the data to make an HTML document.The HTML document is rendered to PDF format and sotred on the server. The client requests the saved PDF and saves it in the storage of the user.
 
 ## FEATURES
 
