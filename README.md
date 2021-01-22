@@ -55,4 +55,4 @@
 <br/><br/>
 
 
-## This app was deployed to heroku which zoomed in the pdf. For that reason, the HTML was zoomed out so that it balances on deployment. To reset it, go to documents folder and open indes.js. In style tag, change zoom of html element from 0.6 to 1.
+#### Note: This app was deployed to heroku which zoomed in the pdf. For that reason, the HTML was zoomed out so that it balances on deployment. To reset it, go to documents folder and open indes.js. In style tag, change zoom of html element from 0.6 to 1.
