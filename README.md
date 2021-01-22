@@ -26,7 +26,7 @@
 ## FEATURES
 
   + 11 different styles available.
-  + Custom style your content using html and css. E.g This is /<b&/> bold &lt/b&gt text will render like : This is <b> bold </b> text.
+  + Custom style your content using html and css. E.g "This is <b> bold </b> text" will render like : This is <b> bold </b> text.
 
   
 
