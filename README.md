@@ -9,13 +9,13 @@
 ## Resume Exampe: Style: Formal, Watermark: Not present<br/><br/>
 
 
-<a href="https://ibb.co/M7P4HzR"><img src="https://i.ibb.co/89Ppwyj/new-Pdf-2.jpg" alt="new-Pdf-2" border="0" /></a>
+<a href="https://ibb.co/M7P4HzR"><img src="https://i.ibb.co/89Ppwyj/new-Pdf-2.jpg" alt="new-Pdf-2" width="300" border="0" /></a>
 
 
 ## Resume Exampe: Style: Colorful, Color: Red, Watermark: Present<br/><br/>
 
 
-<a href="https://ibb.co/g9tF9jv"><img src="https://i.ibb.co/3dSYdrf/new-Pdf-1.jpg" alt="new-Pdf-1" border="0" /></a>
+<a href="https://ibb.co/g9tF9jv"><img src="https://i.ibb.co/3dSYdrf/new-Pdf-1.jpg" alt="new-Pdf-1"  width="300" border="0" /></a>
 
 
 
