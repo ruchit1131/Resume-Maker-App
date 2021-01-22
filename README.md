@@ -21,7 +21,7 @@
 
 
 <a href="https://ibb.co/M7P4HzR"><img src="https://i.ibb.co/89Ppwyj/new-Pdf-2.jpg" alt="new-Pdf-2" width="400" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://ibb.co/g9tF9jv"><img src="https://i.ibb.co/3dSYdrf/new-Pdf-1.jpg" alt="new-Pdf-1"  width="400" border="0" /></a><br/><br/><br/><br/>
+<a href="https://ibb.co/g9tF9jv"><img src="https://i.ibb.co/3dSYdrf/new-Pdf-1.jpg" alt="new-Pdf-1"  width="400" border="0" /></a><br/><br/><br/>
 
 ## FEATURES
 
@@ -30,11 +30,24 @@
   + Custom style your content using html and css. E.g "This is &lt;b&gt; bold &lt;/b&gt; text" will render like  "This is <b> bold </b> text".
   + Add links to github, liknedin, twitter, kaggle, and your own website.
   + Add links to projects.
-<br/><br/><br/><br/>
+<br/><br/>
 
 ## Setup
 
-  
+### Using Command Line
 
+  + Clone the git repo using "git clone https://github.com/ruchit1131/Resume-Maker-App.git"
+  + Move to the git directory using "cd Resume-Maker-App"
+  + Change branch to v1.0.1 using "git checkout v1.0.1"
+  + Install node_modules using "npm i"
+  + Start the server using "nodemon index"
+  + Go to http://localhost:5000 and the app should start working
+  + To use client and server seperately, install node modules in client folder as well and run command "npm run start". The app should automatically open on "http://localhost:3000" if port 3000 is not busy (Server should be running)
+
+### Without command line
+
+  + Switch to v1.0.1 branch of this repo.
+  + Download the code.
+  + Follow instructions from 'Using command line' 
 
 
