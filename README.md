@@ -11,7 +11,7 @@
   ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)&nbsp;&nbsp;&nbsp;
   ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)&nbsp;&nbsp;&nbsp;
   ![Express](https://img.shields.io/badge/-Express-333333?style=flat&logo=express)&nbsp;&nbsp;&nbsp;
-  ![html-pdf](https://img.shields.io/static/v1?label=api&message=html-pdf&color=blue)&nbsp;&nbsp;&nbsp;<br/><br/><br/>
+  ![html-pdf](https://img.shields.io/static/v1?label=module&message=html-pdf&color=blue)&nbsp;&nbsp;&nbsp;<br/><br/><br/>
 <a href="https://ibb.co/q1gSmx9"><img src="https://i.ibb.co/ggW2t6w/localhost-3000-i-Phone-6-7-8-Plus.png" alt="localhost-3000-i-Phone-6-7-8-Plus" width="300"  border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://ibb.co/sPBjhT7"><img src="https://i.ibb.co/hMqskG0/localhost-3000-i-Phone-6-7-8-Plus-1.png" alt="localhost-3000-i-Phone-6-7-8-Plus-1" width="300" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://ibb.co/VDsCNjn"><img src="https://i.ibb.co/sQZ1Pmx/localhost-3000-i-Phone-6-7-8-Plus-2.png" alt="localhost-3000-i-Phone-6-7-8-Plus-2" width="300" border="0" /></a><br/><br/><br/><br/>
@@ -22,6 +22,9 @@
 
 <a href="https://ibb.co/M7P4HzR"><img src="https://i.ibb.co/89Ppwyj/new-Pdf-2.jpg" alt="new-Pdf-2" width="400" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://ibb.co/g9tF9jv"><img src="https://i.ibb.co/3dSYdrf/new-Pdf-1.jpg" alt="new-Pdf-1"  width="400" border="0" /></a><br/><br/><br/>
+
+## ABOUT
+  This is a MERN stack app. html-pdf node module is used to convert html code to PDF file. The frontend react app is a form in which you can enter your details. By default the watermark will appear above. To remove it just check 'Remove Watermark' box. The client(frontend) sends the form data to the server(backend) which uses the data to make an HTML document.The HTML document is rendered to PDF format and sotred on the server. The client requests the saved PDF and saves it in the storage of the user.
 
 ## FEATURES
 
@@ -49,5 +52,7 @@
   + Switch to v1.0.1 branch of this repo.
   + Download the code.
   + Follow instructions from 'Using command line' 
+<br/><br/>
 
 
+## This app was deployed to heroku which zoomed in the pdf. For that reason, the HTML was zoomed out so that it balances on deployment. To reset it, go to documents folder and open indes.js. In style tag, change zoom of html element from 0.6 to 1.
