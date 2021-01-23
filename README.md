@@ -36,7 +36,7 @@
   + Add links to projects.
 <br/><br/>
 
-## Setup
+## SETUP
 
 ### Using Command Line
 
