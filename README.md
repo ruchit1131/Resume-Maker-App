@@ -32,7 +32,7 @@
   + Resume uses stylish fonts and icons.
   + 11 different styles available.
   + Custom style your content using html and css. E.g "This is &lt;b&gt; bold &lt;/b&gt; text" will render like  "This is <b> bold </b> text".
-  + Add links to github, liknedin, twitter, kaggle, and your own website.
+  + Add links to github, linkedin, twitter, kaggle, and your own website.
   + Add links to projects.
 <br/><br/>
 
