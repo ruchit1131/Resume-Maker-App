@@ -42,7 +42,7 @@
 
   + Clone the git repo using "git clone https://github.com/ruchit1131/Resume-Maker-App.git"
   + Move to the git directory using "cd Resume-Maker-App"
-  + Change branch to v1.0.1 using "git checkout v1.0.1"
+  + Change branch to v1.0.2 using "git checkout v1.0.2"
   + Install node_modules using "npm i"
   + Start the server using "nodemon index"
   + Go to http://localhost:5000 and the app should start working
@@ -50,7 +50,7 @@
 
 ### Without command line
 
-  + Switch to v1.0.1 branch of this repo.
+  + Switch to v1.0.2 branch of this repo.
   + Download the code.
   + Follow instructions from 'Using command line' 
 <br/><br/>
