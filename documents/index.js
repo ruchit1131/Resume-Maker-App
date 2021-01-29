@@ -51,9 +51,7 @@ module.exports = ({
 	title4,
 	tech4,
 	link4,
-    project4,
-    color,
-    watermark 
+	project4, 
             }) => {
     
     
@@ -72,9 +70,6 @@ module.exports = ({
            <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
            <style>
-           html{
-               zoom: 0.6;
-           }
                     *{
                         margin: 0;
                         padding: 0;
@@ -113,6 +108,7 @@ module.exports = ({
                         font-family: 'Lato';
                         font-weight: 500;
                         color: #444;
+                        border-radius: 5px 20px
                     }
                         
                     .profile p {
@@ -200,22 +196,14 @@ module.exports = ({
                     
                     /* colorful */
                     
-                    /* ${color === 'peach' ? 'rgb(244, 238, 237)' : ''}${color === 'red' ? 'rgb(54, 29, 48)' : ''}${color === 'green' ? 'rgb(54, 29, 48)' : ''}${color === 'violet' ? 'rgb(54, 29, 48)' : ''}${color === 'blue' ? 'rgb(54, 29, 48)' : ''}${color === 'orange' ? 'rgb(54, 29, 48)' : ''}${color === 'yellow' ? 'rgb(54, 29, 48)' : ''}${color === 'brown' ? 'rgb(54, 29, 48)' : ''}*/
-
-
-
-
-
-
-
-
+                    
 
                     .colorful #subhead{
-                        color: #111;
+                        color: rgb(54, 29, 48);
                     }
 
                     .colorful header {
-                        background: ${color === 'peach' ? 'rgb(222, 184, 171)' : ''}${color === 'red' ? 'rgb(255, 175, 166)' : ''}${color === 'green' ? 'rgb(172, 222, 146)' : ''}${color === 'violet' ? 'rgb(209, 169, 217)' : ''}${color === 'blue' ? 'rgb(178, 218, 237)' : ''}${color === 'orange' ? 'rgb(227, 193, 138)' : ''}${color === 'yellow' ? 'rgb(240, 240, 168)' : ''}${color === 'brown' ? 'rgb(199, 169, 131)' : ''};
+                        background: rgb(222, 184, 171);
                     }
                     
                     .colorful h1 {
@@ -224,8 +212,8 @@ module.exports = ({
                     
                     
                     .info_colorful {
-                        color: #111;
-                        background:  ${color === 'peach' ? 'rgb(244, 238, 237)' : ''}${color === 'red' ? 'rgb(255, 211, 207)' : ''}${color === 'green' ? 'rgb(208, 240, 192)' : ''}${color === 'violet' ? 'rgb(214, 202, 217)' : ''}${color === 'blue' ? 'rgb(209, 230, 240)' : ''}${color === 'orange' ? 'rgb(237, 221, 194)' : ''}${color === 'yellow' ? 'rgb(245, 245, 203)' : ''}${color === 'brown' ? 'rgb(219, 199, 173)' : ''};
+                        color: rgb(54, 29, 48);
+                        background:  rgb(244, 238, 237);
                         border-top: 1px solid black;
                         margin:0px 0px 10px 0px;
                         padding-top:10px ;
@@ -233,19 +221,31 @@ module.exports = ({
                     
                     .contact_colorful {
                         color: rgb(20,20,20);
-                        background:  ${color === 'peach' ? 'rgb(244, 238, 237)' : ''}${color === 'red' ? 'rgb(255, 211, 207)' : ''}${color === 'green' ? 'rgb(208, 240, 192)' : ''}${color === 'violet' ? 'rgb(214, 202, 217)' : ''}${color === 'blue' ? 'rgb(209, 230, 240)' : ''}${color === 'orange' ? 'rgb(237, 221, 194)' : ''}${color === 'yellow' ? 'rgb(245, 245, 203)' : ''}${color === 'brown' ? 'rgb(219, 199, 173)' : ''};
+                        background:  rgb(244, 238, 237);
                     }
 
                     .colorful h2{
                         
                         color: #111;
-                        background:  ${color === 'peach' ? 'rgb(222, 184, 171)' : ''}${color === 'red' ? 'rgb(255, 175, 166)' : ''}${color === 'green' ? 'rgb(172, 222, 146)' : ''}${color === 'violet' ? 'rgb(209, 169, 217)' : ''}${color === 'blue' ? 'rgb(178, 218, 237)' : ''}${color === 'orange' ? 'rgb(227, 193, 138)' : ''}${color === 'yellow' ? 'rgb(240, 240, 168)' : ''}${color === 'brown' ? 'rgb(199, 169, 131)' : ''};
+                        background:  rgb(222, 184, 171);
                     }
                     .colorful h3{
                         
                         color: #111;
                     }
                         
+                    .education_colorful{
+                        color:rgb(74, 63, 59);
+                    }
+                    .education_colorful th{
+                        color:rgb(74, 0, 38);
+                    }
+                    .experience_colorful{
+                        color:rgb(74, 63, 59) !important;
+                    }
+                    .project_colorful{
+                        color:rgb(74, 63, 59) !important;
+                    }
 
 
                     .no-break {
@@ -302,11 +302,20 @@ module.exports = ({
                         padding-bottom: 0px;
                         margin-bottom: 0px;
                     }
+                    a{
+                        color: rgb(0, 0, 135);
+                        text-decoration: none;
+                    }
+                    hr {
+                        margin-top: 0.35em !important;
+                        margin-bottom: 0.35em !important;
+                        border-width: 1px;
+                      }
            </style>
        </head>
     
        <body>
-            <p style="${watermark === "yes" ? 'visibility: hidden;': ''}width: 946px; color: #222;text-decoration: none;border-radius: 20px; background: rgb(232,232,232);font-family: 'Lato'; border: 1px solid #eee; padding: 2px;display:block;
+            <p style="width: 946px; color: #222;text-decoration: none;border-radius: 20px; background: rgb(232,232,232);font-family: 'Lato'; border: 1px solid #eee; padding: 2px;display:block;
             margin: 2px 0px 0px 22px;">
             Made  using  Five  Minute  Resume  App&nbsp&nbsp<a style =" float: right; padding-right: 10px; text-decoration: none; color: rgb(0, 0, 135); "href="https://github.com/ruchit1131/Resume-Maker-App">Source Code</a>
             &nbsp&nbsp<a style ="float: right;padding-right: 10px; text-decoration: none; color: rgb(0, 0, 135); "href="https://five-minute-resume.herokuapp.com/">Link to app</a>
@@ -314,7 +323,7 @@ module.exports = ({
             
             <div class="profile ${style}">
             <div id="content">
-                <header>
+                <header style="border-radius: 5px; margin-bottom: 0px; padding-bottom: 1px">
                     <div>
                         <h1 style="margin:0px 0px 0px 5px; padding: 0px;  font-weight:300; display:inline-block">${prefix} ${fname}</h1> 
                         <h1 style="margin: 0px; padding: 0px;font-weight:500;display:inline-block"> &nbsp${lname}</h1>
@@ -336,14 +345,14 @@ module.exports = ({
      
                         ${skills ? `<div style="font-family: 'Advent Pro';" class="info_${style}">
                         <h3 style=" font-family:'Lato'; margin:0px 0px 5px 5px; padding: 0px; font-size:30px; display:block">Skills</h3>
-                        <span style="margin:0px 0px 0px 5px; padding: 0px; font-size:16px;line-height: 1.5; display:block">${skills}</span>
+                        <span style="margin:0px 0px 0px 10px; padding: 0px; font-size:16px;line-height: 1.5; display:block">${skills}</span>
                         </div>`:''}
                     </div>                
                 </header>
 
                 <hr>
                 ${degree1 || degree2 || degree3? `
-                <h2 style="margin-top:5px; margin-bottom: 5px">${degree1 || degree2 || degree3 ? 'Education': ''}</h2>
+                <h2 style="margin-top:5px; margin-bottom: 5px">${degree1 || degree2 || degree3 ? '&nbsp;Education': ''}</h2>
                 <div class="education_${style}">
                         <table id="edu" class="table text-center table-striped table-bordered">
                             <thead>
@@ -379,7 +388,7 @@ module.exports = ({
          
 
 
-               ${company3 || company1 || company2 ?`<h2 style="margin-top:5px; margin-bottom: 5px">${company3 || company1 || company2? 'Experience':''}</h2>
+               ${company3 || company1 || company2 ?`<h2 style="margin-top:5px; margin-bottom: 5px">${company3 || company1 || company2? '&nbsp;Experience':''}</h2>
                <div class="experience_${style}">
                        <table style="margin-bottom: 0px; padding-bottom: 0px;" class="table">
                            <tbody style="margin-bottom: 0px; padding-bottom: 0px;">
@@ -401,27 +410,26 @@ module.exports = ({
                        </table>
               </div>`:''}
 
-                    <hr>
              ${title1||title2||title3||title4 ? 
               `<div>
-                <h2 style="margin-top: 0px; padding-top:0px; margin-bottom: 5px">${title1||title2||title3||title4  ? 'Projects':''}</h2>
+                <h2 style="margin-top: 0px; padding-top:0px; margin-bottom: 5px">${title1||title2||title3||title4  ? '&nbsp;Projects':''}</h2>
                 <section class="experience_${style}">
-                    ${title1 ? `<div class="no-break " style="padding: 0px; margin: 0px">
+                    ${title1 ? `<div class="no-break " style="padding: 0px; margin: 0px; margin-bottom: 2px">
                         <a id="heading" style="text-decoration: none; color:rgb(0, 0, 135); margin:0px 0px 0px 5px; padding: 0px;display:inline-block" href="${link1? link1:'#'}"> ${title1} <a>  ${tech1 ? '&nbsp&nbsp|&nbsp&nbsp':''} <span id="subhead">${tech1}<span>
                         <p class = "project_${style}" style="font-family: 'Lato';font-weight: 300; margin:0px 0px 0px 10px;font-size: 16px">${project1}</p>
                     </div>`:''}
                     
-                    ${title2 ? `<div class="no-break" style="padding: 0px; margin: 0px">
+                    ${title2 ? `<div class="no-break" style="padding: 0px; margin: 0px; margin-bottom: 2px">
                         <a id="heading" style="text-decoration: none; color:rgb(0, 0, 135); margin:0px 0px 0px 5px; padding: 0px;display:inline-block" href="${link2? link2:'#'}"> ${title2} <a>  ${tech2 ? '&nbsp&nbsp|&nbsp&nbsp':''} <span id="subhead">${tech2}<span>
                         <p class = "project_${style}" style="font-family: 'Lato';font-weight: 300;margin:0px 0px 0px 10px;font-size: 16px">${project2}</p>
                     </div>`:''}
                    
-                    ${title3 ? `<div class="no-break" style="padding: 0px; margin: 0px">
+                    ${title3 ? `<div class="no-break" style="padding: 0px; margin: 0px; margin-bottom: 2px">
                         <a id="heading" style="text-decoration: none; color:rgb(0, 0, 135); margin:0px 0px 0px 5px; padding: 0px;display:inline-block" href="${link3? link3:'#'}"> ${title3} <a>  ${tech3 ? '&nbsp&nbsp|&nbsp&nbsp':''} <span id="subhead">${tech3}<span>
                         <p class = "project_${style}" style="font-family: 'Lato';font-weight: 300;margin:0px 0px 0px 10px;font-size: 16px">${project3}</p>
                     </div>`:''}
 
-                    ${title4 ? `<div class="no-break" style="padding: 0px; margin: 0px">
+                    ${title4 ? `<div class="no-break" style="padding: 0px; margin: 0px; margin-bottom: 2px">
                         <a id="heading" style="text-decoration: none; color:rgb(0, 0, 135); margin:0px 0px 0px 5px; padding: 0px;display:inline-block" href="${link4? link4:'#'}"> ${title4} <a>  ${tech4 ? '&nbsp&nbsp|&nbsp&nbsp':''} <span id="subhead">${tech4}<span>
                         <p class = "project_${style}" style="font-family: 'Lato';font-weight: 300; font-size: 16px;margin:0px 0px 0px 10px;" >${project4}</p>
                     </div>`:''}
@@ -432,8 +440,8 @@ module.exports = ({
                     
             ${achievements ? `<div class="no-break clearfix">
                         
-                <h2 style="margin-top:5px; margin-bottom: 5px">Achievements</h2>          
-                <div class="experience_${style}" id="text_sty">${achievements}</div>
+                <h2 style="margin-top: 0px; padding-top:0px; margin-bottom: 10px">&nbsp;Achievements</h2>          
+                <div class="experience_${style}"  style="font-size: 16px; font-family: 'Lato';font-weight: 300; margin: 0px 0px 0px 10px; padding: 0px;">${achievements}</div>
                     
             </div>`:''}
             </div>
