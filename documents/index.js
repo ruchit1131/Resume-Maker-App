@@ -51,7 +51,13 @@ module.exports = ({
 	title4,
 	tech4,
 	link4,
-	project4, 
+    project4,
+    color,
+    title5,
+	tech5,
+	link5,
+	project5,
+    watermark 
             }) => {
     
     
@@ -103,12 +109,12 @@ module.exports = ({
                     
                     .profile h2 {
                         font-weight: normal;
-                        font-size: 40px;
+                        font-size: 28px;
                         margin: .5em 0;
                         font-family: 'Lato';
-                        font-weight: 500;
+                        font-weight: 700;
                         color: #444;
-                        border-radius: 5px 20px
+                        border-radius: 5px 20px;
                     }
                         
                     .profile p {
@@ -196,14 +202,22 @@ module.exports = ({
                     
                     /* colorful */
                     
-                    
+                    /* ${color === 'peach' ? 'rgb(244, 238, 237)' : ''}${color === 'red' ? 'rgb(54, 29, 48)' : ''}${color === 'green' ? 'rgb(54, 29, 48)' : ''}${color === 'violet' ? 'rgb(54, 29, 48)' : ''}${color === 'blue' ? 'rgb(54, 29, 48)' : ''}${color === 'orange' ? 'rgb(54, 29, 48)' : ''}${color === 'yellow' ? 'rgb(54, 29, 48)' : ''}${color === 'brown' ? 'rgb(54, 29, 48)' : ''}*/
+
+
+
+
+
+
+
+
 
                     .colorful #subhead{
-                        color: rgb(54, 29, 48);
+                        color: #111;
                     }
 
                     .colorful header {
-                        background: rgb(222, 184, 171);
+                        background: ${color === 'peach' ? 'rgb(222, 184, 171)' : ''}${color === 'red' ? 'rgb(255, 175, 166)' : ''}${color === 'green' ? 'rgb(172, 222, 146)' : ''}${color === 'violet' ? 'rgb(209, 169, 217)' : ''}${color === 'blue' ? 'rgb(178, 218, 237)' : ''}${color === 'orange' ? 'rgb(227, 193, 138)' : ''}${color === 'yellow' ? 'rgb(240, 240, 168)' : ''}${color === 'brown' ? 'rgb(199, 169, 131)' : ''};
                     }
                     
                     .colorful h1 {
@@ -212,8 +226,8 @@ module.exports = ({
                     
                     
                     .info_colorful {
-                        color: rgb(54, 29, 48);
-                        background:  rgb(244, 238, 237);
+                        color: #111;
+                        background:  ${color === 'peach' ? 'rgb(244, 238, 237)' : ''}${color === 'red' ? 'rgb(255, 211, 207)' : ''}${color === 'green' ? 'rgb(208, 240, 192)' : ''}${color === 'violet' ? 'rgb(214, 202, 217)' : ''}${color === 'blue' ? 'rgb(209, 230, 240)' : ''}${color === 'orange' ? 'rgb(237, 221, 194)' : ''}${color === 'yellow' ? 'rgb(245, 245, 203)' : ''}${color === 'brown' ? 'rgb(219, 199, 173)' : ''};
                         border-top: 1px solid black;
                         margin:0px 0px 10px 0px;
                         padding-top:10px ;
@@ -221,31 +235,19 @@ module.exports = ({
                     
                     .contact_colorful {
                         color: rgb(20,20,20);
-                        background:  rgb(244, 238, 237);
+                        background:  ${color === 'peach' ? 'rgb(244, 238, 237)' : ''}${color === 'red' ? 'rgb(255, 211, 207)' : ''}${color === 'green' ? 'rgb(208, 240, 192)' : ''}${color === 'violet' ? 'rgb(214, 202, 217)' : ''}${color === 'blue' ? 'rgb(209, 230, 240)' : ''}${color === 'orange' ? 'rgb(237, 221, 194)' : ''}${color === 'yellow' ? 'rgb(245, 245, 203)' : ''}${color === 'brown' ? 'rgb(219, 199, 173)' : ''};
                     }
 
                     .colorful h2{
                         
                         color: #111;
-                        background:  rgb(222, 184, 171);
+                        background:  ${color === 'peach' ? 'rgb(222, 184, 171)' : ''}${color === 'red' ? 'rgb(255, 175, 166)' : ''}${color === 'green' ? 'rgb(172, 222, 146)' : ''}${color === 'violet' ? 'rgb(209, 169, 217)' : ''}${color === 'blue' ? 'rgb(178, 218, 237)' : ''}${color === 'orange' ? 'rgb(227, 193, 138)' : ''}${color === 'yellow' ? 'rgb(240, 240, 168)' : ''}${color === 'brown' ? 'rgb(199, 169, 131)' : ''};
                     }
                     .colorful h3{
                         
                         color: #111;
                     }
                         
-                    .education_colorful{
-                        color:rgb(74, 63, 59);
-                    }
-                    .education_colorful th{
-                        color:rgb(74, 0, 38);
-                    }
-                    .experience_colorful{
-                        color:rgb(74, 63, 59) !important;
-                    }
-                    .project_colorful{
-                        color:rgb(74, 63, 59) !important;
-                    }
 
 
                     .no-break {
@@ -277,10 +279,12 @@ module.exports = ({
                         font-size: 20px;
                         font-family: 'Advent Pro';
                         font-weight: 500;
+                        line-height: 1.3;
                       }
                       td{
                         font-size: 16px;
-                        font-family: 'Scope One'
+                        font-family: 'Scope One';
+                        line-height: 1.3;
                       }
                     #heading{
                         padding-top: 10px !important;
@@ -315,7 +319,7 @@ module.exports = ({
        </head>
     
        <body>
-            <p style="width: 946px; color: #222;text-decoration: none;border-radius: 20px; background: rgb(232,232,232);font-family: 'Lato'; border: 1px solid #eee; padding: 2px;display:block;
+            <p style="${watermark === "yes" ? 'display: none;': 'display: block;'}width: 946px; color: #222;text-decoration: none;border-radius: 20px; background: rgb(232,232,232);font-family: 'Lato'; border: 1px solid #eee; padding: 2px;
             margin: 2px 0px 0px 22px;">
             Made  using  Five  Minute  Resume  App&nbsp&nbsp<a style =" float: right; padding-right: 10px; text-decoration: none; color: rgb(0, 0, 135); "href="https://github.com/ruchit1131/Resume-Maker-App">Source Code</a>
             &nbsp&nbsp<a style ="float: right;padding-right: 10px; text-decoration: none; color: rgb(0, 0, 135); "href="https://five-minute-resume.herokuapp.com/">Link to app</a>
@@ -325,7 +329,7 @@ module.exports = ({
             <div id="content">
                 <header style="border-radius: 5px; margin-bottom: 0px; padding-bottom: 1px">
                     <div>
-                        <h1 style="margin:0px 0px 0px 5px; padding: 0px;  font-weight:300; display:inline-block">${prefix} ${fname}</h1> 
+                        <h1 style="margin:0px 0px 0px 5px; padding: 0px;  font-weight:500; display:inline-block">${prefix} ${fname}</h1> 
                         <h1 style="margin: 0px; padding: 0px;font-weight:500;display:inline-block"> &nbsp${lname}</h1>
                     </div>
                     <div style="font-family: 'Advent Pro';" class="info_${style}">
@@ -334,25 +338,17 @@ module.exports = ({
                             ${pnumber ?`<span style="text-decoration: none;border 0px;"class="contact_${style}"><a href="tel:+91${pnumber}"><i class="fa fa-mobile-phone" style="color:grey"></i></a>&nbsp&nbsp${pnumber}</span>`:''}
                         </div>
                    
-                        <div class="links_${style}" style="position:absolute;top: ${style == "formal" ? '128px': '124px'};right: 50px;width: 200px;height: 100px;">
+                        <div class="links_${style}" style="position:absolute; top: ${watermark === "no" ? `${style == "formal" ? '128px': '124px'}` : `${style == "formal" ? '96px': '92px'}`}; right: 50px;width: 200px;height: 100px;">
                         ${website ? '<span style="float: right; padding: 7px; padding-bottom:0px; color: rgb(0, 0, 135);" class="contact_':''}  ${website ? `${style}`:''}  ${website ? '"><a href="':''}${website? website:''}${website ? '" style="text-decoration:none; color:rgb(0, 0, 135)"><i class="fa fa-link" style="color: grey"></i></a></span>':''}
                         ${twitter ? '<span style="float: right; padding: 7px; padding-bottom:0px; color: rgb(0, 0, 135);" class="contact_':''}  ${twitter ? `${style}`:''}  ${twitter ? '"><a href="':''}${twitter? twitter:''}${twitter ? '" style="text-decoration:none; color:rgb(0, 0, 135)"><i class="fa fa-twitter" style="color: grey"></i></a></span>':''}
                         ${kaggle ? '<span style="float: right; padding: 7px; padding-bottom:0px; color: rgb(0, 0, 135);" class="contact_':''}  ${kaggle ? `${style}`:''}  ${kaggle ? '"><a href="':''}${kaggle? kaggle:''}${kaggle ? '" style="text-decoration:none; color:rgb(0, 0, 135)"><i class="fab fa-kaggle" style="color: grey"></i></a></span>':''}
                         ${github ? '<span style="float: right; padding: 7px; padding-bottom:0px; color: rgb(0, 0, 135);" class="contact_':''}  ${github ? `${style}`:''}  ${github ? '"><a href="':''}${github? github:''}${github ? '" style="text-decoration:none; color:rgb(0, 0, 135)"><i class="fa fa-github" style="color: grey"></i></a></span>':''}
                         ${linkedin ? '<span style="float: right; padding: 7px; padding-bottom:0px; color: rgb(0, 0, 135);" class="contact_':''}  ${linkedin ? `${style}`:''}  ${linkedin ? '"><a href="':''}${linkedin? linkedin:''}${linkedin ? '" style="text-decoration:none; color:rgb(0, 0, 135)"><i class="fa fa-linkedin" style="color: grey"></i></a></span>':''}
-                       
-                        </div>  
-     
-                        ${skills ? `<div style="font-family: 'Advent Pro';" class="info_${style}">
-                        <h3 style=" font-family:'Lato'; margin:0px 0px 5px 5px; padding: 0px; font-size:30px; display:block">Skills</h3>
-                        <span style="margin:0px 0px 0px 10px; padding: 0px; font-size:16px;line-height: 1.5; display:block">${skills}</span>
-                        </div>`:''}
-                    </div>                
+                                       
                 </header>
 
-                <hr>
                 ${degree1 || degree2 || degree3? `
-                <h2 style="margin-top:5px; margin-bottom: 5px">${degree1 || degree2 || degree3 ? '&nbsp;Education': ''}</h2>
+                <h2 style="margin-top:5px; margin-bottom: 5px">${degree1 || degree2 || degree3 ? '&nbsp;&nbsp;Education': ''}</h2>
                 <div class="education_${style}">
                         <table id="edu" class="table text-center table-striped table-bordered">
                             <thead>
@@ -388,7 +384,7 @@ module.exports = ({
          
 
 
-               ${company3 || company1 || company2 ?`<h2 style="margin-top:5px; margin-bottom: 5px">${company3 || company1 || company2? '&nbsp;Experience':''}</h2>
+               ${company3 || company1 || company2 ?`<h2 style="margin-top:5px; margin-bottom: 5px">${company3 || company1 || company2? '&nbsp;&nbsp;Experience':''}</h2>
                <div class="experience_${style}">
                        <table style="margin-bottom: 0px; padding-bottom: 0px;" class="table">
                            <tbody style="margin-bottom: 0px; padding-bottom: 0px;">
@@ -412,7 +408,7 @@ module.exports = ({
 
              ${title1||title2||title3||title4 ? 
               `<div>
-                <h2 style="margin-top: 0px; padding-top:0px; margin-bottom: 5px">${title1||title2||title3||title4  ? '&nbsp;Projects':''}</h2>
+                <h2 style="margin-top: 0px; padding-top:0px; margin-bottom: 0px">${title1||title2||title3||title4  ? '&nbsp;&nbsp;Projects':''}</h2>
                 <section class="experience_${style}">
                     ${title1 ? `<div class="no-break " style="padding: 0px; margin: 0px; margin-bottom: 2px">
                         <a id="heading" style="text-decoration: none; color:rgb(0, 0, 135); margin:0px 0px 0px 5px; padding: 0px;display:inline-block" href="${link1? link1:'#'}"> ${title1} <a>  ${tech1 ? '&nbsp&nbsp|&nbsp&nbsp':''} <span id="subhead">${tech1}<span>
@@ -434,13 +430,26 @@ module.exports = ({
                         <p class = "project_${style}" style="font-family: 'Lato';font-weight: 300; font-size: 16px;margin:0px 0px 0px 10px;" >${project4}</p>
                     </div>`:''}
 
+                    ${title5 ? `<div class="no-break" style="padding: 0px; margin: 0px; margin-bottom: 2px">
+                        <a id="heading" style="text-decoration: none; color:rgb(0, 0, 135); margin:0px 0px 0px 5px; padding: 0px;display:inline-block" href="${link5? link5:'#'}"> ${title5} <a>  ${tech5 ? '&nbsp&nbsp|&nbsp&nbsp':''} <span id="subhead">${tech5}<span>
+                        <p class = "project_${style}" style="font-family: 'Lato';font-weight: 300; font-size: 16px;margin:0px 0px 0px 10px;" >${project5}</p>
+                    </div>`:''}
+
                 </section>
     
             </div>`:''}
+            
+     
+            ${skills ? `<div class="no-break clearfix">
+                        
+                <h2 style="margin-top: 0px; padding-top:0px; margin-bottom: 10px">&nbsp;&nbsp;Skills</h2>          
+                <div class="experience_${style}"  style="font-size: 16px; font-family: 'Lato';font-weight: 300; margin: 0px 0px 0px 10px; padding: 0px;">${skills}</div>
                     
+            </div>`:''}
+
             ${achievements ? `<div class="no-break clearfix">
                         
-                <h2 style="margin-top: 0px; padding-top:0px; margin-bottom: 10px">&nbsp;Achievements</h2>          
+                <h2 style="margin-top: 0px; padding-top:0px; margin-bottom: 10px">&nbsp;&nbsp;Achievements</h2>          
                 <div class="experience_${style}"  style="font-size: 16px; font-family: 'Lato';font-weight: 300; margin: 0px 0px 0px 10px; padding: 0px;">${achievements}</div>
                     
             </div>`:''}
@@ -451,3 +460,8 @@ module.exports = ({
     
     `;
     };
+
+
+
+
+    // top: ${style == "formal" ? '128px': '124px'};
